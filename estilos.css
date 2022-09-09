@@ -29,33 +29,98 @@ html{
     font-family: 'Vampiro One', cursive;
     font-size: 3.7rem;
     text-decoration: underline #DE480B;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.menu_navegacion li a:hover{
+    color: #DE480B;
 }
 
 .fondo_titulo{
     background-image: url(./img/foto-titulo.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0 25px 0;
 }
 
-.content{
- display: flex;
- justify-content: center;
-}
-
-.front_nosotros{
-    color: #ffffff;
-    padding: 25px;
-}
-
-.front_nosotros h2{
-    font-size: 4rem;
+.card h2 {
+    margin: 0 0 18px 0;
+    font-size: 2.25em;
     font-family: 'Vampiro One', cursive;
-}
-
-.front_nosotros p{
-    font-size: 1.9rem;
+    color: #ffffff;
+  }
+  .card p,
+  .card h2{
+    transition: 1s ease;
+    transform: translateZ(225px);
+  }
+  
+  
+  .card p {
+    font-size: 2.3rem;
+    line-height: 1em;
+    color: #ffffff;
     font-family: 'Cinzel', serif;
+  }
+  
+  .card {
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    padding: 1em;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    border-radius: 25px;
+    font-size: 2rem;
+    background: #DE480B;
+    transform-style: preserve-3d;
+    transition: 2s ease, box-shadow 2s ease 0s;
+    background-image: url(./img/foto-titulo.jpg);
+  }
+  
+  .card .content{
+    transform-style: preserve-3d;
+    transition: 1s ease;
+  }
+  .card:hover{
+    transform: rotateY(.5turn);
+    box-shadow: 0 0 50px rgb(254, 73, 1);
+    transition: 2s ease, box-shadow .3s ease 1.5s;
+  }
+  
+.back {
+    transform: rotateY(.5turn);
+  }
+
+.back h2{
+    font-size: 3.3rem;
 }
+  
+  .back, .front {
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    position: relative;
+  }
+
+  .front h2{
+    font-size: 3.3rem;
+  }
+  
 
 .titulo_combos{
+    background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,89,0,1) 50%, rgba(0,0,0,1) 100%);
     color: #ffffff;
     text-align: center;
@@ -99,7 +164,7 @@ html{
     text-align: center;
     color: #ffffff;
     background: rgb(0,0,0);
-    background: #DE480B;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,89,0,1) 50%, rgba(0,0,0,1) 100%);
     font-family: 'Vampiro One', cursive;
     font-size: 2.4rem;
 
@@ -128,6 +193,7 @@ html{
 .informacion_sala_vip div div img{
     border-radius: 50%;
     margin: 20px;
+    box-shadow: #000000 0px 0px 10px 10px;
 }
 
 
