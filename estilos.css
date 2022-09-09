@@ -450,71 +450,106 @@ html{
 }
 
 /* aqui aplico css a nuestra cerveza */
-.cambio_todo{
-    color: #000000;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 80vh;
-}
-
-.texto_witbier h2{
-    font-size: 5rem;
-    color: #ffffff;
-    font-family: 'Vampiro One', cursive;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.texto_witbier p{
+.fondo_nestra_cerveza{
     background-color: #000000;
-    color: #DE480B;
-    font-size: 2.5rem;
-    font-family: 'Cinzel', serif;
-    text-align: center;
-}
-
-.texto_antiga{
-    text-align: center;
-}
-
-.texto_antiga img{
-    margin-top: 40px;
-    border-radius: 20%;
-}
-
-.primera_cerveza{
-    background-image: url(./img/luna.jpg);
-}
-
-.segunda_cerveza{
-    background-image: url(./img/luna_roja.jpg);
-}
-
-.tercera_cerveza{
-    background-image: url(./img/planeta_tierra.jpg);
-}
-
-.cuarta_cerveza{
-    background-image: url(./img/jupiter.jpg);
-}
-
-.quinta_cerveza{
-    background-image: url(./img/frozen.jpg);
-}
-
-.sexta_cerveza{
-    background-image: url(./img/fondo_cream.jpg);
-}
-
-.septima_cerveza{
-    background-image: url(./img/paisaje_verde.jpg);
-
-}
-
-.octava_cerveza{
-    background-image: url(./img/aguila_gris.jpg);
-}
+    }
+    
+    .herder_fondo_cerveza{
+        background-image: url(./img/fondo_menu_cerveza.jpg);
+        background-repeat: no-repeat;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header{
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header h1{
+        font-family: 'Vampiro One', cursive;
+        font-size: 5rem;
+    }
+    
+    .header p{
+        font-size: 2.5rem;
+        color: #DE480B;
+        font-family: 'Cinzel', serif;
+    }
+    
+    .cambio_todo{
+        color: #000000;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 80vh;
+        margin: 30px;
+    }
+    
+    .texto_witbier h2{
+        font-size: 5.5rem;
+        color: #ffffff;
+        font-family: 'Vampiro One', cursive;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .texto_witbier p{
+        background-color: #000000;
+        color: #DE480B;
+        border: groove #DE480B 8px;
+        font-size: 2.5rem;
+        padding: 20px;
+        font-family: 'Cinzel', serif;
+        text-align: center;
+    }
+    
+    .texto_antiga{
+        text-align: center;
+    }
+    
+    .texto_antiga img{
+        margin-top: 40px;
+        border-radius: 30%;
+        box-shadow: #000000 0px 0px 10px 10px;
+    }
+    
+    .primera_cerveza{
+        background-image: url(./img/luna.jpg);
+    }
+    
+    .segunda_cerveza{
+        background-image: url(./img/luna_roja.jpg);
+    }
+    
+    .tercera_cerveza{
+        background-image: url(./img/planeta_tierra.jpg);
+    }
+    
+    .cuarta_cerveza{
+        background-image: url(./img/jupiter.jpg);
+    }
+    
+    .quinta_cerveza{
+        background-image: url(./img/frozen.jpg);
+    }
+    
+    .sexta_cerveza{
+        background-image: url(./img/fondo_cream.jpg);
+    }
+    
+    .septima_cerveza{
+        background-image: url(./img/paisaje_verde.jpg);
+    
+    }
+    
+    .octava_cerveza{
+        background-image: url(./img/aguila_gris.jpg);
+    }
 
 @media (max-width: 480px){
     .menu_navegacion{
