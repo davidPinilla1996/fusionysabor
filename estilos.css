@@ -294,7 +294,8 @@ html{
 
 .diseño_titulos{
     margin: 25px 25px;
-    background-color: #DE480B;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,89,0,1) 50%, rgba(0,0,0,1) 100%);
     color: #ffffff;
     font-size: 2.5rem;
     font-family: 'Vampiro One', cursive;
@@ -302,7 +303,6 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: groove #DE480B 10px;
 }
 
 .titulo_1{
@@ -319,11 +319,12 @@ html{
 }
 
 .margen_cajas_producto{
-    border: groove #DE480B 10px;
+    border:  #DE480B 10px;
     color: #ffffff;
     margin: 28px;
     padding: 15px;
-    background-color: #DE480B;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,90,1,1) 68%, rgba(255,90,1,1) 100%);
     border-bottom-right-radius: 25%;
     display: flex;
     flex-direction: column;
@@ -331,7 +332,9 @@ html{
     text-align: center;
     font-size: 1.9rem;
     font-family: 'Cinzel', serif;
+    box-shadow: #000000 0px 0px 15px 15px;
 }
+
 
 .borde_redondo{
     border-radius: 40%;
@@ -342,15 +345,17 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border: groove #DE480B 10px;
+    /* border:  #DE480B 10px; */
     text-align: center;
     color: #ffffff;
-    background-color: #DE480B;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,90,1,1) 68%, rgba(255,90,1,1) 100%);
     margin: 30px;
     padding: 15px;
     font-size: 1.9rem;
     font-family: 'Cinzel', serif;
     border-bottom-left-radius: 25%;
+    box-shadow: #000000 0px 0px 10px 10px;
 }
 
 .borde_foto_postre{
@@ -425,6 +430,10 @@ html{
   grid-area: imgpostreuno;
 }
 
+.foto_postre1 img{
+    border-radius: 20%;
+}
+
 
 .foto_postre2{
    grid-area: imgpostredos;
@@ -438,33 +447,6 @@ html{
 .carrusel{
     background-color: #DE480B;
     font-size: 1.5rem;
-}
-
-.herder_fondo_cerveza{
-    background-image: url(./img/fondo_menu_cerveza.jpg);
-    background-repeat: no-repeat;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header{
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.header h1{
-    font-family: 'Vampiro One', cursive;
-    font-size: 5rem;
-}
-
-.header p{
-    font-size: 2.5rem;
-    color: #DE480B;
-    font-family: 'Cinzel', serif;
 }
 
 /* aqui aplico css a nuestra cerveza */
