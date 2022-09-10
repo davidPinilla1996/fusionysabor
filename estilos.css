@@ -550,7 +550,6 @@ html{
     .octava_cerveza{
         background-image: url(./img/aguila_gris.jpg);
     }
-
 @media (max-width: 480px){
     .menu_navegacion{
         flex-direction: column;
