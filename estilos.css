@@ -355,12 +355,15 @@ html{
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,89,0,1) 50%, rgba(0,0,0,1) 100%);
     color: #ffffff;
-    font-size: 2.5rem;
     font-family: 'Vampiro One', cursive;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.diseño_titulos h2{
+    font-size: 3rem;
 }
 
 .titulo_1{
@@ -403,7 +406,6 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* border:  #DE480B 10px; */
     text-align: center;
     color: #ffffff;
     background: rgb(0,0,0);
@@ -502,10 +504,26 @@ html{
    grid-area: imgpostretres;
 }
 
-.carrusel{
-    background-color: #DE480B;
-    font-size: 1.5rem;
+.jugos_naturales{
+    background-image: url(./img/fondo_menu_cerveza.jpg);
+    border-top: ridge #DE480B 10px;
+    border-bottom: ridge #DE480B 10px;
+
 }
+.carousel-caption h5{
+    font-family: 'Vampiro One', cursive;
+    font-size: 3.2rem;
+    border: double 4px #DE480B;
+    background-color: #000000;
+}
+
+.carousel-caption p{
+    font-size: 3rem;
+    font-family: 'Cinzel', serif;
+    border: double 4px #DE480B;
+    background-color: #000000;
+   }
+   
 
 /* aqui aplico css a nuestra cerveza */
 .fondo_nestra_cerveza{
