@@ -801,6 +801,38 @@ html{
 .foto_jugo{
   width: 502px;
 }
+
+/* aqui aplico css a nuestra cerveza */
+  
+
+.header h1{
+    font-size: 2.2rem;
+  }
+  .header p{
+    font-size: 1.3rem;
+  }
+
+.cambio_todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cambio_todo img{
+    width: 80px;
+}
+
+.texto_witbier p{
+   font-size: 1.5rem;
+}
+
+.texto_witbier h2{
+    font-size: 3rem;
+ }
+
+ .texto_witbier img{
+    width: 170px;
+ }
 }
 
 
