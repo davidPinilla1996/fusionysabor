@@ -9,7 +9,7 @@ html{
 
 /* AQUI APLICO CSS A LA SECCION DE INICIO */
 
-.navbar{
+.navbar_nav{
     background-color: #000000;
 }
 
@@ -59,7 +59,7 @@ html{
   
   
   .card p {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     line-height: 1em;
     color: #ffffff;
     font-family: 'Cinzel', serif;
@@ -129,6 +129,10 @@ html{
 
 }
 
+.titulo_combos h2{
+    font-size: 3rem;
+}
+
 .combos_fusion{
     width: 100%;
     height: 80vh;
@@ -170,6 +174,10 @@ html{
 
 }
 
+.titulo_sala_vip h2{
+    font-size: 3rem;
+}
+
 .informacion_sala_vip{
     background-image: url(./img/foto-titulo.jpg);
     background-attachment: fixed;
@@ -196,6 +204,56 @@ html{
     box-shadow: #000000 0px 0px 10px 10px;
 }
 
+.titulo_articulos{
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,89,0,1) 50%, rgba(0,0,0,1) 100%);
+    font-family: 'Vampiro One', cursive; 
+    text-align: center;
+}
+
+.titulo_articulos h2{
+    font-size: 2.7rem;
+}
+
+.articulos_exclusivo{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-image: url(./img/fondo_naranja.jpg);
+    
+}
+
+.articulos_exclusivo img{
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    box-shadow: #000000 0px 0px 10px 10px;
+}
+
+.card_dos{
+    border: double 4px #000000;
+    }
+
+.card-body p{
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+}
+
+.fondo_boleto_vip{
+    background-image: url(./img/foto-titulo.jpg);
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.card_tres{
+    border: double 4px #DE480B;
+    box-shadow: #DE480B 0px 0px 10px 10px;
+    text-align: center;
+}
 
  div footer{
     background-color: #000000;
