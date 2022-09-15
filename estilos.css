@@ -596,7 +596,6 @@ html{
     .texto_antiga img{
         margin-top: 40px;
         border-radius: 30%;
-        box-shadow: #000000 0px 0px 10px 10px;
     }
     
     .primera_cerveza{
@@ -617,6 +616,10 @@ html{
     
     .quinta_cerveza{
         background-image: url(./img/frozen.jpg);
+    }
+
+    .tumaco{
+        width: 227px;
     }
     
     .sexta_cerveza{
