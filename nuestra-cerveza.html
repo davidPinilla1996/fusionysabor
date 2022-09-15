@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
     <link rel="shortcut icon" href="./img/favicon-ico.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>NUESTRA CERVEZA</title>
 </head>
@@ -29,7 +31,9 @@
         </div>
     </section>
     <section class="primera_cerveza cambio_todo">
-        <div class="witbier">
+        <div class="witbier" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
             <img src="./img/witbier.png" alt="">
             <img src="./img/witbier_otro.png" alt="">
         </div>
@@ -39,7 +43,9 @@
         </div>
     </section>
     <section class="segunda_cerveza cambio_todo">
-        <div>
+        <div data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
             <img src="./img/amber_ale.png" alt="">
             <img src="./img/amber_ale_two.png" alt="">
         </div>
@@ -49,7 +55,9 @@
         </div>
     </section>
     <section class="tercera_cerveza cambio_todo">
-        <div>
+        <div data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
             <img src="./img/zipa_ipa.png" alt="">
             <img src="./img/zipa_ipa_ipa.png" alt="">
         </div>
@@ -60,7 +68,9 @@
         </div>
     </section>
     <section class="cuarta_cerveza cambio_todo">
-        <div>
+        <div data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
             <img src="./img/cerveza_jupiter.png" alt="">
             <img src="./img/cerveza_jupiter.png" alt="">
         </div>
@@ -70,7 +80,9 @@
         </div>
     </section>
     <section class="quinta_cerveza cambio_todo">
-        <div>
+        <div data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
             <img class="tumaco" src="./img/tumaco.png" alt="">
             <img class="tumaco" src="./img/tumaco_tumaco.png" alt="">
         </div>
@@ -83,21 +95,21 @@
         <div class="texto_antiga texto_witbier">
             <h2>INDIA PALE ALE IPA</h2>
             <p>Es una cerveza muy lupulada y de  color ambarino claro,<br> con ligera turbidez y espuma blanca cremosa.</p>
-            <img src="./img/india_pale.jpg" alt="">
+            <img  data-aos="zoom-in" src="./img/india_pale.jpg" alt="">
         </div>
     </section>
     <section class="sexta_cerveza cambio_todo">
         <div class="texto_antiga texto_witbier">
             <h2>ANTIGA CREAM ALE</h2>
             <p>Una cerveza ideal para todos los días. <br>¿No te gusta la cerveza artesana? Recomendada para las personas que buscan una cerveza «normal». <br>Cerveza suave, refrescante y bien atenuada, de bajo perfil maltoso, con ligeras notas dulces.</p>
-            <img src="./img/Cream_Ale.jpg" alt="">
+            <img  data-aos="zoom-in" src="./img/Cream_Ale.jpg" alt="">
         </div>
     </section>
     <section class="octava_cerveza cambio_todo">
         <div class="texto_antiga texto_witbier">
             <h2>INDIA PALE ALE IPA</h2>
             <p>Cerveza negra con sabor intenso a café y frutos secos..</p>
-            <img src="./img/imperial_stout.jpg" alt="">
+            <img  data-aos="zoom-in" src="./img/imperial_stout.jpg" alt="">
         </div>
     </section>
     <section class="herder_fondo_cerveza">
@@ -140,5 +152,8 @@
              </section>
          </footer>
        </div>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
