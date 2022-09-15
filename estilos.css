@@ -9,7 +9,7 @@ html{
 
 /* AQUI APLICO CSS A LA SECCION DE INICIO */
 
-.navbar{
+.navbar_nav{
     background-color: #000000;
 }
 
@@ -59,7 +59,7 @@ html{
   
   
   .card p {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     line-height: 1em;
     color: #ffffff;
     font-family: 'Cinzel', serif;
@@ -129,6 +129,10 @@ html{
 
 }
 
+.titulo_combos h2{
+    font-size: 3rem;
+}
+
 .combos_fusion{
     width: 100%;
     height: 80vh;
@@ -170,6 +174,10 @@ html{
 
 }
 
+.titulo_sala_vip h2{
+    font-size: 3rem;
+}
+
 .informacion_sala_vip{
     background-image: url(./img/foto-titulo.jpg);
     background-attachment: fixed;
@@ -196,6 +204,56 @@ html{
     box-shadow: #000000 0px 0px 10px 10px;
 }
 
+.titulo_articulos{
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,89,0,1) 50%, rgba(0,0,0,1) 100%);
+    font-family: 'Vampiro One', cursive; 
+    text-align: center;
+}
+
+.titulo_articulos h2{
+    font-size: 2.7rem;
+}
+
+.articulos_exclusivo{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-image: url(./img/fondo_naranja.jpg);
+    
+}
+
+.articulos_exclusivo img{
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    box-shadow: #000000 0px 0px 10px 10px;
+}
+
+.card_dos{
+    border: double 4px #000000;
+    }
+
+.card-body p{
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+}
+
+.fondo_boleto_vip{
+    background-image: url(./img/foto-titulo.jpg);
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.card_tres{
+    border: double 4px #DE480B;
+    box-shadow: #DE480B 0px 0px 10px 10px;
+    text-align: center;
+}
 
  div footer{
     background-color: #000000;
@@ -297,12 +355,15 @@ html{
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,89,0,1) 50%, rgba(0,0,0,1) 100%);
     color: #ffffff;
-    font-size: 2.5rem;
     font-family: 'Vampiro One', cursive;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.diseño_titulos h2{
+    font-size: 3rem;
 }
 
 .titulo_1{
@@ -345,7 +406,6 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* border:  #DE480B 10px; */
     text-align: center;
     color: #ffffff;
     background: rgb(0,0,0);
@@ -371,6 +431,7 @@ html{
 .foto_ensalada_2{
     grid-area: imgdos;
 }
+
 .foto_ensalada_3{
     grid-area: imgtres;
 }
@@ -444,10 +505,30 @@ html{
    grid-area: imgpostretres;
 }
 
-.carrusel{
-    background-color: #DE480B;
-    font-size: 1.5rem;
+.jugos_naturales{
+    background-image: url(./img/fondo_menu_cerveza.jpg);
+    border-top: ridge #DE480B 10px;
+    border-bottom: ridge #DE480B 10px;
+
 }
+.carousel-caption h5{
+    font-family: 'Vampiro One', cursive;
+    font-size: 3.2rem;
+    border: double 4px #DE480B;
+    background-color: #000000;
+}
+
+.carousel-caption p{
+    font-size: 3rem;
+    font-family: 'Cinzel', serif;
+    border: double 4px #DE480B;
+    background-color: #000000;
+   }
+
+.foto_jugo{
+    width: 2016px;
+}
+   
 
 /* aqui aplico css a nuestra cerveza */
 .fondo_nestra_cerveza{
@@ -567,13 +648,13 @@ html{
     .content{
         flex-direction: column;
     }
-
     .content div h2{
         font-size: 2.6rem;
     }
 
     .content p{
         font-size: 1.5rem;
+        line-height: 23px;
     }
 
     .content video{
@@ -584,8 +665,8 @@ html{
         flex-direction: column;
     }
 
-    .titulo_combos{
-        font-size: 1.3rem;
+    .titulo_combos h2{
+        font-size: 2.2rem;
     }
 
     .combos_fusion img {
@@ -600,8 +681,8 @@ html{
         font-size: 1.3rem;
     }
 
-    .titulo_sala_vip{
-        font-size: 1.3rem;
+    .titulo_sala_vip h2{
+        font-size: 2.2rem;
     }
 
     .informacion_sala_vip div div img{
@@ -611,6 +692,22 @@ html{
     .informacion_sala_vip div p{
         font-size: 1.3rem;
     }
+
+   .titulo_articulos h2{
+   font-size: 2.2rem;
+    }
+
+    .articulos_exclusivo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(./img/fondo_naranja_mobile.jpg);
+    }
+
+    .card_dos{
+        margin-bottom: 20px;
+    }
+
 
     .sección_footer{
         flex-direction: column;
@@ -704,6 +801,42 @@ html{
    .diseño_producto_postres img{
     height: 165px;
    }
+
+.foto_jugo{
+  width: 502px;
+}
+
+/* aqui aplico css a nuestra cerveza */
+  
+
+.header h1{
+    font-size: 2.2rem;
+  }
+  .header p{
+    font-size: 1.3rem;
+  }
+
+.cambio_todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cambio_todo img{
+    width: 80px;
+}
+
+.texto_witbier p{
+   font-size: 1.5rem;
+}
+
+.texto_witbier h2{
+    font-size: 3rem;
+ }
+
+ .texto_witbier img{
+    width: 170px;
+ }
 }
 
 
