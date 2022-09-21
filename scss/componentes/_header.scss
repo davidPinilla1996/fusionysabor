@@ -1,0 +1,74 @@
+.titulo_show{
+    background-image: url(/img/show_en-vivo.jpg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 480px){
+       height: 90vh;
+  }
+}
+
+.titulo_show p{
+    font-family: $fontuno;
+    font-size: 2.7rem;
+    color: $bg-black;
+    @media (max-width: 480px){
+      font-size: 1.7rem;
+  }
+}
+
+@keyframes tipsy {
+    0% {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+  }
+
+  .titulo_show h1 {
+    color: $color-principal;
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -3px;
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: $fontuno;
+    @media ( max-width: 480px){
+      font-size: 31px;
+    }
+}
+  
+  
+  .titulo_show h1:before,
+  .titulo_show h1:after {
+    content: '';
+    padding: .9em .4em;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    display: block;
+    border: 10px double $bg-black;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 10s infinite alternate ease-in-out tipsy;
+  }
+  
+  .titulo_show h1:before {
+    border-color: DE480B DE480B rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+  
+  .titulo_show h1:after {
+    box-shadow: 0 0 70px rgb(254, 73, 1);
+  }
+
+  .info_tarjeta-vip{
+    background-image: url(/img/foto-titulo.jpg);
+  }

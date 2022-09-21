@@ -1,0 +1,53 @@
+.tarjeta_vip{
+      background: rgb(0, 0, 0);
+      background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 89, 0) 50%, rgb(0, 0, 0) 100%);
+      color: $color-principal;
+      text-align: center;
+      font-family: $fontdos;
+      font-size: 2rem;
+      @media (max-width: 480px){
+        font-size: 1.4rem;
+    }
+    }
+
+.info_articulos{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
+  background-color: $bg-black-secundary;
+  text-align: center;
+  background-image: url(/img/fondo_fondo.jpg);
+  @media (max-width: 480px){
+    flex-direction: column;
+  }
+}
+
+.exclusivo p{
+  font-size: 2.4rem;
+  font-family: $fontuno;
+  color: $color-principal;
+  margin-top: 40px;
+  font-weight: bolder;
+  border-bottom: $bg-black 7px double;
+  @media (max-width: 480px){
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+}
+
+.tamaño_img{
+  width: 300px;
+  @media (max-width: 480px){
+    width: 120px;
+}
+}
+
+
+.margen{
+  border: $bg-black groove 7px;
+  border-bottom-left-radius: 40%;
+}
+
+
+

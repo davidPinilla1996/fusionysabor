@@ -1,0 +1,818 @@
+// aqui agrego css a show en vivo
+@import "base/variables";
+@import "componentes/header";
+@import "componentes/article_primero.scss";
+@import "componentes/article_segundo";
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* AQUI APLICO CSS A LA SECCION DE INICIO */
+
+.navbar_nav{
+    background-color: #000000;
+}
+
+.menu_navegacion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu_navegacion li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.menu_navegacion li a{
+    color: #ffffff;
+    font-family: 'Vampiro One', cursive;
+    font-size: 3.7rem;
+    text-decoration: underline #DE480B;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.menu_navegacion li a:hover{
+    color: #DE480B;
+}
+
+.fondo_titulo{
+    background-image: url(./img/foto-titulo.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0 25px 0;
+}
+
+.card h2 {
+    margin: 0 0 18px 0;
+    font-size: 2.25em;
+    font-family: 'Vampiro One', cursive;
+    color: #ffffff;
+  }
+  .card p,
+  .card h2{
+    transition: 1s ease;
+    transform: translateZ(225px);
+  }
+  
+  
+  .card p {
+    font-size: 2.1rem;
+    line-height: 1em;
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+  }
+  
+  .card {
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    padding: 1em;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    border-radius: 25px;
+    font-size: 2rem;
+    background: #DE480B;
+    transform-style: preserve-3d;
+    transition: 2s ease, box-shadow 2s ease 0s;
+    background-image: url(./img/foto-titulo.jpg);
+  }
+  
+  .card .content{
+    transform-style: preserve-3d;
+    transition: 1s ease;
+  }
+  .card:hover{
+    transform: rotateY(.5turn);
+    box-shadow: 0 0 50px rgb(254, 73, 1);
+    transition: 2s ease, box-shadow .3s ease 1.5s;
+  }
+  
+.back {
+    transform: rotateY(.5turn);
+  }
+
+.back h2{
+    font-size: 3.3rem;
+}
+  
+  .back, .front {
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    position: relative;
+  }
+
+  .front h2{
+    font-size: 3.3rem;
+  }
+  
+
+.titulo_combos{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,89,0,1) 50%, rgba(0,0,0,1) 100%);
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Vampiro One', cursive;
+    font-size: 2.2rem;
+
+}
+
+.titulo_combos h2{
+    font-size: 3rem;
+}
+
+.combos_fusion{
+    width: 100%;
+    height: 80vh;
+    background-image: url(./img/parallax1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.combos_fusion div h2{
+    font-size: 2.9rem;
+    font-family: 'Vampiro One', cursive;
+}
+
+
+.combos_fusion div p{
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+}
+
+
+.combos_fusion img{
+    border-radius: 22%;
+}
+
+
+.titulo_sala_vip{
+    text-align: center;
+    color: #ffffff;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,89,0,1) 50%, rgba(0,0,0,1) 100%);
+    font-family: 'Vampiro One', cursive;
+    font-size: 2.4rem;
+
+}
+
+.titulo_sala_vip h2{
+    font-size: 3rem;
+}
+
+.informacion_sala_vip{
+    background-image: url(./img/foto-titulo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: 'Cinzel', serif;
+}
+
+.informacion_sala_vip div p{
+    margin: 7px;
+}
+
+
+.informacion_sala_vip div div img{
+    border-radius: 50%;
+    margin: 20px;
+    box-shadow: #000000 0px 0px 10px 10px;
+}
+
+.titulo_articulos{
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,89,0,1) 50%, rgba(0,0,0,1) 100%);
+    font-family: 'Vampiro One', cursive; 
+    text-align: center;
+}
+
+.titulo_articulos h2{
+    font-size: 2.7rem;
+}
+
+.articulos_exclusivo{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-image: url(./img/fondo_naranja.jpg);
+    
+}
+
+.articulos_exclusivo img{
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    box-shadow: #000000 0px 0px 10px 10px;
+}
+
+.card_dos{
+    border: double 4px #000000;
+    }
+
+.card-body p{
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+}
+
+.fondo_boleto_vip{
+    background-image: url(./img/foto-titulo.jpg);
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.card_tres{
+    border: double 4px #DE480B;
+    box-shadow: #DE480B 0px 0px 10px 10px;
+    text-align: center;
+}
+
+ div footer{
+    background-color: #000000;
+}
+
+
+.sección_footer{
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sección_footer a img{
+    margin-left: 15px;
+}
+
+.horarios h2{
+    padding: 20px;
+    font-size: 3.5rem;
+    font-family: 'Vampiro One', cursive;
+}
+
+.horarios p{
+    margin: 23px;
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+}
+
+.redes_sociales h2{
+    font-size: 3.5rem;
+    font-family: 'Vampiro One', cursive;
+}
+
+.redes_sociales ul{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.redes_sociales ul li{
+    margin: 12px;
+}
+
+
+
+.ubicacion_restaurante h2{
+    font-size: 3.0rem;
+    font-family: 'Vampiro One', cursive;
+}
+
+.ubicacion_restaurante p{
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+}
+
+.ubicacion_restaurante h2 p{
+   margin: 5px;
+}
+
+.ubicacion_restaurante h2, p, iframe{
+    margin-top: 10px;
+}
+
+.copyright{
+     padding: 15px;
+     font-size: 1.5rem;
+     color: #ffffff;
+     display: flex;
+     justify-content: center;
+     font-family: 'Cinzel', serif;
+}
+
+/* AQUI APLICO CSS A LA SECCION NUESTRO MENU */
+
+.container_padre{
+    background-image: url(./img/foto-titulo.jpg);
+    display: grid;
+    grid-template-columns: repeat(1fr, 5);
+    grid-template-rows: repeat(1fr, 7);
+    grid-template-areas: "txtmenu txtmenu txtmenu txtmenu txt3"
+                         "txtcero txtcero txtcero txtcero imgpostreuno"
+                         "imguno imgdos imgtres imgcuatro imgpostreuno"
+                         "txt1 txt1 txt1 txt1 imgpostredos"
+                         "imgparrillauno imgparrillados imgparrillatres imgparrillacuatro imgpostredos"
+                         "txt2 txt2 txt2 txt2 imgpostretres"
+                         "imgpastasuno imgpastasdos imgpastastres imgpastascuatro imgpostretres"
+}
+
+.nuestro_menu{
+    grid-area: txtmenu;
+}
+
+.diseño_titulos{
+    margin: 25px 25px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,89,0,1) 50%, rgba(0,0,0,1) 100%);
+    color: #ffffff;
+    font-family: 'Vampiro One', cursive;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diseño_titulos h2{
+    font-size: 3rem;
+}
+
+.titulo_1{
+    grid-area: txtcero;
+    margin-top: 20px;
+}
+
+.diseño_titulos_producto{
+    margin: 25px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 4.5rem;
+    font-family: 'Vampiro One', cursive;
+}
+
+.margen_cajas_producto{
+    border:  #DE480B 10px;
+    color: #ffffff;
+    margin: 28px;
+    padding: 15px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,90,1,1) 68%, rgba(255,90,1,1) 100%);
+    border-bottom-right-radius: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1.9rem;
+    font-family: 'Cinzel', serif;
+    box-shadow: #000000 0px 0px 15px 15px;
+}
+
+
+.borde_redondo{
+    border-radius: 40%;
+}
+
+.diseño_producto_postres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    color: #ffffff;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,90,1,1) 68%, rgba(255,90,1,1) 100%);
+    margin: 30px;
+    padding: 15px;
+    font-size: 1.9rem;
+    font-family: 'Cinzel', serif;
+    border-bottom-left-radius: 25%;
+    box-shadow: #000000 0px 0px 10px 10px;
+}
+
+.borde_foto_postre{
+    border-radius: 30%;
+}
+
+
+.foto_ensalada_1{
+    grid-area: imguno;
+}
+
+
+.foto_ensalada_2{
+    grid-area: imgdos;
+}
+
+.foto_ensalada_3{
+    grid-area: imgtres;
+}
+
+.foto_ensalada_4{
+    grid-area: imgcuatro;
+}
+
+
+.titulo_2{
+    grid-area: txt1;
+}
+
+.foto_parrilla1{
+    grid-area: imgparrillauno;
+}
+
+.foto_parrilla2{
+    grid-area: imgparrillados;
+}
+
+.foto_parrilla3{
+    grid-area: imgparrillatres;
+}
+
+.foto_parrilla4{
+    grid-area: imgparrillacuatro;
+}
+
+.titulo_3{
+    grid-area: txt2;
+}
+
+.foto_pastas1{
+    grid-area: imgpastasuno;
+}
+
+
+.foto_pastas2{
+    grid-area: imgpastasdos;
+}
+
+.foto_pastas3{
+    grid-area: imgpastastres;
+}
+
+.foto_pastas4{
+    grid-area: imgpastascuatro;
+}
+
+
+.titulo_postre{
+    grid-area: txt3;
+}
+
+.foto_postre1{
+  grid-area: imgpostreuno;
+}
+
+.foto_postre1 img{
+    border-radius: 20%;
+}
+
+
+.foto_postre2{
+   grid-area: imgpostredos;
+
+}
+
+.foto_postre3{
+   grid-area: imgpostretres;
+}
+
+.jugos_naturales{
+    background-image: url(./img/fondo_menu_cerveza.jpg);
+    border-top: ridge #DE480B 10px;
+    border-bottom: ridge #DE480B 10px;
+
+}
+.carousel-caption h5{
+    font-family: 'Vampiro One', cursive;
+    font-size: 3.2rem;
+    border: double 4px #DE480B;
+    background-color: #000000;
+}
+
+.carousel-caption p{
+    font-size: 3rem;
+    font-family: 'Cinzel', serif;
+    border: double 4px #DE480B;
+    background-color: #000000;
+   }
+
+.foto_jugo{
+    width: 2000px;
+}
+   
+
+/* aqui aplico css a nuestra cerveza */
+.fondo_nestra_cerveza{
+    background-color: #000000;
+    background-image: url(./img/fondo_menu_cerveza.jpg);
+    }
+    
+    .herder_fondo_cerveza{
+        background-repeat: no-repeat;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header{
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header h1{
+        font-family: 'Vampiro One', cursive;
+        font-size: 5rem;
+    }
+    
+    .header p{
+        font-size: 2.5rem;
+        color: #DE480B;
+        font-family: 'Cinzel', serif;
+    }
+    
+    .cambio_todo{
+        color: #000000;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 80vh;
+        margin: 30px;
+    }
+    
+    .texto_witbier h2{
+        font-size: 5.5rem;
+        color: #ffffff;
+        font-family: 'Vampiro One', cursive;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .texto_witbier p{
+        color: #DE480B;
+        font-size: 2.5rem;
+        padding: 20px;
+        font-family: 'Cinzel', serif;
+        text-align: center;
+        border: double 10px #DE480B;
+    }
+    
+    .texto_antiga{
+        text-align: center;
+    }
+    
+    .texto_antiga img{
+        margin-top: 40px;
+        border-radius: 30%;
+    }
+
+    .tumaco{
+        width: 227px;
+    }
+
+@media (max-width: 480px){
+    .menu_navegacion{
+        flex-direction: column;
+        padding: 15px 0  15px 0;
+    }
+
+    .menu_navegacion img{
+        height: 150px;
+    }
+
+    .menu_navegacion li a{
+        font-size: 2rem;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+    .content div h2{
+        font-size: 2.6rem;
+    }
+
+    .content p{
+        font-size: 1.5rem;
+        line-height: 23px;
+    }
+
+    .content video{
+        display: none;
+    }
+
+    .combos_fusion{
+        flex-direction: column;
+    }
+
+    .titulo_combos h2{
+        font-size: 2.2rem;
+    }
+
+    .combos_fusion img {
+        display: none;
+    }
+
+    .combos_fusion div h2{
+        font-size: 2rem;
+    }
+
+    .combos_fusion div p{
+        font-size: 1.3rem;
+    }
+
+    .titulo_sala_vip h2{
+        font-size: 2.2rem;
+    }
+
+    .informacion_sala_vip div div img{
+        height: 150px;
+    }
+
+    .informacion_sala_vip div p{
+        font-size: 1.3rem;
+    }
+
+   .titulo_articulos h2{
+   font-size: 2.2rem;
+    }
+
+    .articulos_exclusivo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(./img/fondo_naranja_mobile.jpg);
+    }
+
+    .card_dos{
+        margin-bottom: 20px;
+    }
+
+
+    .sección_footer{
+        flex-direction: column;
+    }
+
+    .logo_footer{
+        height: 150px;
+    }
+
+    .horarios h2{
+        font-size: 2rem;
+    }
+
+    .horarios p{
+        font-size: 1.5rem;
+    }
+
+    .redes_sociales h2{
+        font-size: 2rem;
+    }
+
+
+    .ubicacion_restaurante h2{
+        font-size: 2rem;
+     }
+
+    .ubicacion_restaurante p{
+        font-size: 1.3rem;
+     }
+
+     .ubicacion_restaurante iframe{
+        width: 250px;
+     }
+
+    .copyright{
+        text-align: center;
+    }
+
+    .copyright div p{
+        font-size: 1.3rem;
+    }
+
+    /* aqui aplico media queries a nuestro menu */
+
+    .container_padre{
+        grid-template-columns: 350px;
+        grid-template-rows: repeat(250px);
+        grid-template-areas: "txtmenu"
+                             "txtcero"
+                             "imguno"
+                             "imgdos"
+                             "imgtres"
+                             "imgcuatro"
+                             "txt1"
+                             "imgparrillauno"
+                             "imgparrillados"
+                             "imgparrillatres"
+                             "imgparrillacuatro"
+                             "txt2"
+                             "imgpastasuno"
+                             "imgpastasdos"
+                             "imgpastastres"
+                             "imgpastascuatro"
+                             "txt3"
+                             "imgpostreuno"
+                             "imgpostredos"
+                             "imgpostretres"
+    }
+
+
+   .carrusel{
+    display: none;
+   }
+
+   .container_padre{
+    justify-content: center;
+   }
+
+   .nuestro_menu h2{
+    font-size: 2.5rem;
+   }
+
+   .titulo_1{
+    font-size: 3rem;
+   }
+
+   .margen_cajas_producto h3, p{
+    font-size: 1.7rem;
+   }
+
+   .diseño_producto_postres img{
+    height: 165px;
+   }
+
+.foto_jugo{
+  width: 502px;
+}
+
+/* aqui aplico css a nuestra cerveza */
+  
+
+.header h1{
+    font-size: 2.2rem;
+  }
+  .header p{
+    font-size: 1.3rem;
+  }
+
+.cambio_todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cambio_todo img{
+    width: 80px;
+}
+
+.texto_witbier p{
+   font-size: 1.5rem;
+}
+
+.texto_witbier h2{
+    font-size: 3rem;
+ }
+
+ .texto_witbier img{
+    width: 170px;
+ }
+}
+
+
