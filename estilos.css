@@ -6,21 +6,11 @@
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 480px) {
-  .titulo_show {
-    height: 90vh;
-  }
-}
 
 .titulo_show p {
   font-family: "Cinzel", serif;
   font-size: 2.7rem;
   color: #DE480B;
-}
-@media (max-width: 480px) {
-  .titulo_show p {
-    font-size: 1.7rem;
-  }
 }
 
 @keyframes tipsy {
@@ -44,11 +34,6 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   font-family: "Cinzel", serif;
-}
-@media (max-width: 480px) {
-  .titulo_show h1 {
-    font-size: 31px;
-  }
 }
 
 .titulo_show h1:before,
@@ -86,11 +71,6 @@
   font-family: "Vampiro One", cursive;
   font-size: 2rem;
 }
-@media (max-width: 480px) {
-  .tarjeta_vip {
-    font-size: 1.4rem;
-  }
-}
 
 .info_articulos {
   display: flex;
@@ -101,11 +81,6 @@
   text-align: center;
   background-image: url(/img/fondo_fondo.jpg);
 }
-@media (max-width: 480px) {
-  .info_articulos {
-    flex-direction: column;
-  }
-}
 
 .exclusivo p {
   font-size: 2.4rem;
@@ -115,20 +90,9 @@
   font-weight: bolder;
   border-bottom: #DE480B 7px double;
 }
-@media (max-width: 480px) {
-  .exclusivo p {
-    font-size: 1.6rem;
-    margin-top: 10px;
-  }
-}
 
 .tamaño_img {
   width: 300px;
-}
-@media (max-width: 480px) {
-  .tamaño_img {
-    width: 120px;
-  }
 }
 
 .margen {
@@ -166,31 +130,15 @@
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 480px) {
-  .info_artistas {
-    flex-direction: column;
-  }
-}
 
 .info_artistas img {
   padding: 30px;
-}
-@media (max-width: 480px) {
-  .info_artistas img {
-    height: 200px;
-  }
 }
 
 .info_artistas h3 {
   color: #DE480B;
   font-size: 3rem;
   font-family: "Cinzel", serif;
-}
-@media (max-width: 480px) {
-  .info_artistas h3 {
-    font-size: 2.1rem;
-    text-align: center;
-  }
 }
 
 .info_artistas p {
@@ -201,12 +149,6 @@
   font-family: "Cinzel", serif;
   margin-right: 30px;
   box-shadow: #000000 0px 0px 10px 10px;
-}
-@media (max-width: 480px) {
-  .info_artistas p {
-    font-size: 1.4rem;
-    margin-right: auto;
-  }
 }
 
 html {
@@ -925,6 +867,42 @@ div footer {
   }
   .texto_witbier img {
     width: 170px;
+  }
+  .titulo_show {
+    height: 90vh;
+  }
+  .titulo_show p {
+    font-size: 1.7rem;
+  }
+  .titulo_show h1 {
+    font-size: 31px;
+  }
+  .tarjeta_vip {
+    font-size: 1.4rem;
+  }
+  .info_articulos {
+    flex-direction: column;
+  }
+  .exclusivo p {
+    font-size: 1.6rem;
+    margin-top: 10px;
+  }
+  .tamaño_img {
+    width: 120px;
+  }
+  .info_artistas {
+    flex-direction: column;
+  }
+  .info_artistas img {
+    height: 200px;
+  }
+  .info_artistas h3 {
+    font-size: 2.1rem;
+    text-align: center;
+  }
+  .info_artistas p {
+    font-size: 1.4rem;
+    margin-right: auto;
   }
 }
 

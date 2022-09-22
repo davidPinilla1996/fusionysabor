@@ -813,6 +813,53 @@ html{
  .texto_witbier img{
     width: 170px;
  }
+//  aqui aplico css a bandas en vivo
+.titulo_show{
+    height: 90vh;
+}
+
+.titulo_show p{
+    font-size: 1.7rem;
+}
+
+.titulo_show h1{
+    font-size: 31px;
+}
+
+.tarjeta_vip{
+    font-size: 1.4rem;
+}
+
+.info_articulos{
+    flex-direction: column;
+}
+
+.exclusivo p{
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+
+.tamaño_img{
+    width: 120px;
+}
+
+.info_artistas{
+    flex-direction: column;
+}
+
+.info_artistas img{
+    height: 200px;
+}
+
+.info_artistas h3{
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.info_artistas p{
+    font-size: 1.4rem;
+    margin-right: auto;
+}
 }
 
 
