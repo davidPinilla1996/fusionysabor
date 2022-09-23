@@ -733,10 +733,12 @@ div footer {
     padding: 15px 0 15px 0;
   }
   .menu_navegacion img {
-    height: 150px;
+    height: 130px;
+    margin: 5px;
   }
   .menu_navegacion li a {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    margin: 15px;
   }
   .content {
     flex-direction: column;
