@@ -1,9 +1,7 @@
 .titulo_show{
     background-image: url(/img/show_en-vivo.jpg);
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %elementos;
 }
 
 .titulo_show p{

@@ -1,8 +1,12 @@
 // aqui agrego css a show en vivo
 @import "base/variables";
+@import "base/extend";
+@import "base/mixin";
 @import "componentes/header";
 @import "componentes/article_primero.scss";
 @import "componentes/article_segundo";
+
+
 
 html{
     font-size: 62.5%;
@@ -20,9 +24,7 @@ html{
 }
 
 .menu_navegacion{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @extend %elementos_dos;
 }
 
 .menu_navegacion li{
@@ -45,9 +47,7 @@ html{
 
 .fondo_titulo{
     background-image: url(./img/foto-titulo.jpg);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @extend %elementos_dos;
     padding: 25px 0 25px 0;
 }
 
@@ -128,8 +128,7 @@ html{
 .titulo_combos{
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,89,0,1) 50%, rgba(0,0,0,1) 100%);
-    color: #ffffff;
-    text-align: center;
+    @extend %elementos_tres;
     font-family: 'Vampiro One', cursive;
     font-size: 2.2rem;
 
@@ -146,11 +145,8 @@ html{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #ffffff;
-    text-align: center;
+    @extend %elementos_dos;
+    @extend %elementos_tres;
 }
 
 .combos_fusion div h2{
@@ -171,8 +167,7 @@ html{
 
 
 .titulo_sala_vip{
-    text-align: center;
-    color: #ffffff;
+    @extend %elementos_tres;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,89,0,1) 50%, rgba(0,0,0,1) 100%);
     font-family: 'Vampiro One', cursive;
@@ -193,8 +188,7 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
-    text-align: center;
+    @extend %elementos_tres;
     font-size: 2.2rem;
     font-family: 'Cinzel', serif;
 }
@@ -211,10 +205,9 @@ html{
 }
 
 .titulo_articulos{
-    color: #ffffff;
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,89,0,1) 50%, rgba(0,0,0,1) 100%);
     font-family: 'Vampiro One', cursive; 
-    text-align: center;
+    @extend %elementos_tres;
 }
 
 .titulo_articulos h2{
@@ -268,8 +261,7 @@ html{
 
 .sección_footer{
     padding: 15px;
-    color: #ffffff;
-    text-align: center;
+    @extend %elementos_tres;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -363,9 +355,7 @@ html{
     color: #ffffff;
     font-family: 'Vampiro One', cursive;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %elementos;
 }
 
 .diseño_titulos h2{
@@ -379,8 +369,7 @@ html{
 
 .diseño_titulos_producto{
     margin: 25px;
-    color: #ffffff;
-    text-align: center;
+    @extend %elementos_tres;
     font-size: 4.5rem;
     font-family: 'Vampiro One', cursive;
 }
@@ -412,16 +401,13 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    text-align: center;
-    color: #ffffff;
+    @extend %elementos_tres;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,90,1,1) 68%, rgba(255,90,1,1) 100%);
-    margin: 30px;
-    padding: 15px;
-    font-size: 1.9rem;
-    font-family: 'Cinzel', serif;
+    @include cajas(30px, #000000);
     border-bottom-left-radius: 25%;
-    box-shadow: #000000 0px 0px 10px 10px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.9rem;
 }
 
 .borde_foto_postre{
@@ -545,16 +531,13 @@ html{
     .herder_fondo_cerveza{
         background-repeat: no-repeat;
         height: 60vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %elementos;
     }
     
     .header{
-        color: #ffffff;
         display: flex;
         flex-direction: column;
-        text-align: center;
+        @extend %elementos_tres;
     }
     
     .header h1{
@@ -579,10 +562,9 @@ html{
     
     .texto_witbier h2{
         font-size: 5.5rem;
-        color: #ffffff;
         font-family: 'Vampiro One', cursive;
-        text-align: center;
         margin-bottom: 30px;
+        @extend %elementos_tres;
     }
     
     .texto_witbier p{

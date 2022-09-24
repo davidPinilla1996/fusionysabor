@@ -23,9 +23,7 @@
 }
 
 .info_artistas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %elementos;
 }
 
 .info_artistas img{

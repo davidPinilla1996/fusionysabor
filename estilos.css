@@ -1,10 +1,24 @@
 @charset "UTF-8";
-.titulo_show {
-  background-image: url(/img/show_en-vivo.jpg);
-  height: 100vh;
+.herder_fondo_cerveza, .diseño_titulos, .info_artistas, .titulo_show {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.combos_fusion, .fondo_titulo, .menu_navegacion, .info_articulos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.texto_witbier h2, .header, .diseño_producto_postres, .diseño_titulos_producto, .sección_footer, .titulo_articulos, .informacion_sala_vip, .titulo_sala_vip, .combos_fusion, .titulo_combos {
+  text-align: center;
+  color: #ffffff;
+}
+
+.titulo_show {
+  background-image: url(/img/show_en-vivo.jpg);
+  height: 100vh;
 }
 
 .titulo_show p {
@@ -73,9 +87,6 @@
 }
 
 .info_articulos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   height: 70vh;
   background-color: #000000;
   text-align: center;
@@ -125,12 +136,6 @@
   background-image: url(/img/fondo_yeison_artista.jpg);
 }
 
-.info_artistas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .info_artistas img {
   padding: 30px;
 }
@@ -165,12 +170,6 @@ html {
   background-color: #000000;
 }
 
-.menu_navegacion {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .menu_navegacion li {
   list-style-type: none;
   margin-right: 20px;
@@ -191,9 +190,6 @@ html {
 
 .fondo_titulo {
   background-image: url(./img/foto-titulo.jpg);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding: 25px 0 25px 0;
 }
 
@@ -274,8 +270,6 @@ html {
 .titulo_combos {
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 89, 0) 50%, rgb(0, 0, 0) 100%);
-  color: #ffffff;
-  text-align: center;
   font-family: "Vampiro One", cursive;
   font-size: 2.2rem;
 }
@@ -291,11 +285,6 @@ html {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: #ffffff;
-  text-align: center;
 }
 
 .combos_fusion div h2 {
@@ -313,8 +302,6 @@ html {
 }
 
 .titulo_sala_vip {
-  text-align: center;
-  color: #ffffff;
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 89, 0) 50%, rgb(0, 0, 0) 100%);
   font-family: "Vampiro One", cursive;
@@ -334,8 +321,6 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
-  text-align: center;
   font-size: 2.2rem;
   font-family: "Cinzel", serif;
 }
@@ -351,10 +336,8 @@ html {
 }
 
 .titulo_articulos {
-  color: #ffffff;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 89, 0) 50%, rgb(0, 0, 0) 100%);
   font-family: "Vampiro One", cursive;
-  text-align: center;
 }
 
 .titulo_articulos h2 {
@@ -406,8 +389,6 @@ div footer {
 
 .sección_footer {
   padding: 15px;
-  color: #ffffff;
-  text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -492,9 +473,6 @@ div footer {
   color: #ffffff;
   font-family: "Vampiro One", cursive;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .diseño_titulos h2 {
@@ -508,8 +486,6 @@ div footer {
 
 .diseño_titulos_producto {
   margin: 25px;
-  color: #ffffff;
-  text-align: center;
   font-size: 4.5rem;
   font-family: "Vampiro One", cursive;
 }
@@ -540,16 +516,15 @@ div footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  text-align: center;
-  color: #ffffff;
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(255, 90, 1) 68%, rgb(255, 90, 1) 100%);
   margin: 30px;
   padding: 15px;
-  font-size: 1.9rem;
-  font-family: "Cinzel", serif;
+  border: #DE480B 10px;
+  box-shadow: #000000 0px 0px 15px 15px;
   border-bottom-left-radius: 25%;
-  box-shadow: #000000 0px 0px 10px 10px;
+  font-family: "Cinzel", serif;
+  font-size: 1.9rem;
 }
 
 .borde_foto_postre {
@@ -665,16 +640,11 @@ div footer {
 .herder_fondo_cerveza {
   background-repeat: no-repeat;
   height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .header {
-  color: #ffffff;
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
 
 .header h1 {
@@ -699,9 +669,7 @@ div footer {
 
 .texto_witbier h2 {
   font-size: 5.5rem;
-  color: #ffffff;
   font-family: "Vampiro One", cursive;
-  text-align: center;
   margin-bottom: 30px;
 }
 

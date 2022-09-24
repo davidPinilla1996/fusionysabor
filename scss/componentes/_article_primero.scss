@@ -8,9 +8,7 @@
     }
 
 .info_articulos{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  @extend %elementos_dos;
   height: 70vh;
   background-color: $bg-black-secundary;
   text-align: center;
