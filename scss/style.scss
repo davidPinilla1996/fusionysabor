@@ -1,5 +1,6 @@
 // aqui agrego css a show en vivo
 @import "base/variables";
+@import "base/maps";
 @import "base/extend";
 @import "base/mixin";
 @import "componentes/header";
@@ -249,9 +250,9 @@ html{
 }
 
 .card_tres{
-    border: double 4px #DE480B;
-    box-shadow: #DE480B 0px 0px 10px 10px;
-    text-align: center;
+    border: map-get($map: $card, $key: border);
+    box-shadow: map-get($map: $card, $key:box-shadow );
+    text-align: map-get($map: $card, $key: text-align);
 }
 
  div footer{
