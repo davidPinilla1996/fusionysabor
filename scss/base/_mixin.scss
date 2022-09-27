@@ -1,6 +1,6 @@
 @mixin cajas( $size, $color) {
     margin: $size;
-    padding: $size / 2;
+    padding: ($size / 2);
     border: #DE480B 10px;
     box-shadow: $color 0px 0px 15px 15px;
 }
