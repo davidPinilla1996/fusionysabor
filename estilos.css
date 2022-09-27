@@ -190,27 +190,7 @@ html {
 
 .fondo_titulo {
   background-image: url(./img/foto-titulo.jpg);
-  padding: 25px 0 25px 0;
-}
-
-.card h2 {
-  margin: 0 0 18px 0;
-  font-size: 2.25em;
-  font-family: "Vampiro One", cursive;
-  color: #ffffff;
-}
-
-.card p,
-.card h2 {
-  transition: 1s ease;
-  transform: translateZ(225px);
-}
-
-.card p {
-  font-size: 2.1rem;
-  line-height: 1em;
-  color: #ffffff;
-  font-family: "Cinzel", serif;
+  padding: 30px 30px 30px 30px;
 }
 
 .card {
@@ -239,12 +219,26 @@ html {
   transition: 2s ease, box-shadow 0.3s ease 1.5s;
 }
 
+.card p,
+.card h2 {
+  transition: 1s ease;
+  transform: translateZ(225px);
+}
+
 .back {
   transform: rotateY(0.5turn);
 }
 
 .back h2 {
-  font-size: 3.3rem;
+  font-size: 3.2rem;
+  color: #ffffff;
+  font-family: "Vampiro One", cursive;
+}
+
+.back p {
+  color: #ffffff;
+  font-family: "Cinzel", serif;
+  font-size: 1.8rem;
 }
 
 .back, .front {
@@ -264,7 +258,16 @@ html {
 }
 
 .front h2 {
-  font-size: 3.3rem;
+  font-size: 3.2rem;
+  margin: 0 0 18px 0;
+  font-family: "Vampiro One", cursive;
+  color: #ffffff;
+}
+
+.front p {
+  color: #ffffff;
+  font-family: "Cinzel", serif;
+  font-size: 1.8rem;
 }
 
 .titulo_combos {
@@ -708,6 +711,9 @@ div footer {
     font-size: 1.7rem;
     margin: 15px;
   }
+  .card {
+    max-width: 220px;
+  }
   .content {
     flex-direction: column;
   }
@@ -725,19 +731,19 @@ div footer {
     flex-direction: column;
   }
   .titulo_combos h2 {
-    font-size: 2.2rem;
+    font-size: 1.7rem;
   }
   .combos_fusion img {
     display: none;
   }
   .combos_fusion div h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .combos_fusion div p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .titulo_sala_vip h2 {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
   }
   .informacion_sala_vip div div img {
     height: 150px;
@@ -746,7 +752,7 @@ div footer {
     font-size: 1.3rem;
   }
   .titulo_articulos h2 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
   .articulos_exclusivo {
     display: flex;
@@ -754,8 +760,15 @@ div footer {
     align-items: center;
     background-image: url(./img/fondo_naranja_mobile.jpg);
   }
+  .tamaño_imagen {
+    width: 140px;
+  }
   .card_dos {
     margin-bottom: 20px;
+    max-width: 150px;
+  }
+  .card-body p {
+    font-size: 1.7rem;
   }
   .sección_footer {
     flex-direction: column;
