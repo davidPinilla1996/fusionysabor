@@ -521,10 +521,6 @@ html{
     border: double 4px #DE480B;
     background-color: #000000;
    }
-
-.foto_jugo{
-    width: 2000px;
-}
    
 
 /* aqui aplico css a nuestra cerveza */
@@ -755,31 +751,54 @@ html{
                              "imgpostredos"
                              "imgpostretres"
     }
-
-
-   .carrusel{
-    display: none;
-   }
-
-   .container_padre{
+.container_padre{
     justify-content: center;
-   }
+}
 
-   .nuestro_menu h2{
+.nuestro_menu h2{
     font-size: 2.5rem;
-   }
+}
 
-   .titulo_1{
-    font-size: 3rem;
-   }
+.diseño_titulos_producto{
+    font-size: 2.7rem;
+}
 
-   .margen_cajas_producto h3, p{
-    font-size: 1.7rem;
-   }
+.margen_cajas_producto h3, p{
+    font-size: 1.5rem;
+}
 
-   .diseño_producto_postres img{
-    height: 165px;
-   }
+.margen_cajas_producto{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.borde_redondo{
+    width: 150px;
+    padding-bottom: 20px;
+}
+
+.margen_cajas_producto{
+    align-items: center;
+}
+
+
+.titulo_postre h2{
+    font-size: 2.5rem;
+}
+
+.diseño_producto_postres{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.diseño_producto_postres img{
+    width: 150px;
+    padding-bottom: 20px;
+}
+
+.carrusel{
+    display: none;
+}
 
 .foto_jugo{
   width: 502px;
