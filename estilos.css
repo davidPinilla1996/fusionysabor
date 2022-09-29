@@ -694,6 +694,104 @@ div footer {
   width: 227px;
 }
 
+body {
+  background-image: url(/img/foto-titulo.jpg);
+}
+
+.form {
+  width: 700px;
+  height: 840px;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 12%, rgb(255, 90, 1) 100%, rgb(255, 90, 1) 100%);
+  box-shadow: #000000 0px 0px 10px 10px;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+.titulo_form {
+  font-size: 3.7rem;
+  margin: 30px 0;
+  padding-bottom: 5px;
+  color: #ffffff;
+  width: 263px;
+  border-bottom: 4px solid #ffffff;
+  font-family: "Vampiro One", cursive;
+}
+
+.form p {
+  font-size: 3.5rem;
+  color: #ffffff;
+  font-family: "Cinzel", serif;
+  margin-top: 45px;
+}
+
+.form p input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #ffffff;
+}
+
+.form p input:focus {
+  border-bottom: 3px solid #DE480B;
+}
+
+.form p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #000000;
+}
+
+.form button {
+  float: right;
+  padding: 8px 12px;
+  margin: 40px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 5px ridge #ffffff;
+  background: 0;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 20px;
+}
+
+.form button:hover {
+  background: #DE480B;
+  color: #fff;
+}
+
+.contenedor_form {
+  position: absolute;
+  bottom: -15px;
+  right: 12px;
+  background: #DE480B;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-top-left-radius: 60%;
+  border-bottom-right-radius: 60%;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
+  font-size: 18px;
+  text-align: center;
+}
+
+.contenedor_form span {
+  margin: 0 10px 0 20px;
+}
+
 @media (max-width: 480px) {
   .menu_navegacion {
     flex-direction: column;
